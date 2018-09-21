@@ -1,38 +1,52 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i|Merriweather+Sans');
-html, body, article, h1, h2, h3, p, nav, ul, li {
+html, body, header, article, h1, h2, h3, p, nav, ul, li {
   margin: 0;
   padding: 0;
 }
 html {
-  margin-bottom: 100px;
-  padding-bottom: 100px;
+  // margin-bottom: 100px;
+  // padding-bottom: 100px;
+  scroll-behavior: smooth;
+
 }
 body {
   font-family: Lato, Arial, sans-serif;
   font-size: 15px;
+
 }
 a {
   color: green;
   text-decoration: none;
+
+
   &:hover {
     color: red;
   }
   &:visited {
     color: cyan;
   }
+  &.more {
   &::before {
-    content: '[';
+
+    content: '...[';
   }
   &::after {
-    content: ']';
+    content: ']...';
   }
+}
 }
 h1 {
   font-family: Merriweather + Sans;
-  font-size: 150%;
+  font-size: 78px;
   letter-spacing: 1px;
-  margin: 5%;
-  text-align: center;
+  margin: 0;
+  &::after {
+    display: block;
+    content: '';
+    height: 10px;
+    width: 100%;
+    background-color: black;
+  }
 }
 h2 {
   font-family: Merriweather;
@@ -42,17 +56,26 @@ h2 {
   text-align: center;
 }
 h3 {
+
   text-align: center;
   font-size: 120%;
   letter-spacing: .5px;
   margin: 2%;
 }
+h4 {
+  text-align: center;
+  font-size: 120%;
+display: inline;
+width: 100%;
+}
 ul {
   list-style-type: none;
-  margin: 0;
-  align-self: flex-start;
+  // margin: 0;
   li {
     margin: 10px;
-    text-align: left;
+    text-align: center;
   }
+}
+section {
+  border: 1px solid blue;
 }

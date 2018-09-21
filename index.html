@@ -5,63 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <title>Portfolio</title>
 </head>
-<body class="l-flex">
-  <section class="flex about">
-    <div><img src="../resources/profile-image.jpeg" class="profile-image" alt=""></div>
-    <h1>Ivan Ran</h1>
-    <p><em>I write scalabale, modular and readable code</em></p>
-    <h2>About me</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam dolores neque eligendi. Mollitia quibusdam esse similique minus dolor, sit blanditiis modi impedit quia quos, nulla nobis eum deleniti, fugit voluptatum?</p>
-    <ul>
-      <li>stuff</li>
-      <li>more stuff</li>
-      <li>even more stuff</li>
-      <li>more stuffy stuff</li>
-      <li>done</li>
-    </ul>
-  </section>
-  <section class="flex projects">
-    <h3>Projects</h3>
-    <ul>
+<body class="l-container">
+  <main class="l-main">
+    <header><h1>Hi, <br>I'm Ivan Ran!</h1>
+      <div class="bar"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam dolores neque eligendi. Mollitia quibusdam esse similique minus dolor, sit blanditiis modi impedit quia quos, nulla nobis eum deleniti, fugit voluptatum?</p>
+    </header>
+    <section id="work">
 
-      <li><a href="https://google.com">project 1</a></li>
-      <li><a href="https://google.com">project 2</a></li>
-      <li><a href="https://google.com">project 3</a></li>
-      <li><a href="https://google.com">project 4</a></li>
-    </ul>
-  </section>
-  <section class="flex sideprojects">
-    <h3>Sideprojects</h3>
-    <ul>
+      <h3>Projects</h3>
+      <ul>
+        <li><a href="https://google.com"><h3>project 1</h3></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, nemo perferendis rem quisquam possimus similique eum, pariatur harum quod est neque minus natus enim aliquid. Reprehenderit pariatur in quos, corporis?</p>
+        </li>
+        <li><a href="https://google.com"><h3>project 2</h3></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, nisi laudantium delectus quos commodi laboriosam quo quibusdam unde alias sed, aperiam quod qui quas repellendus. Necessitatibus dolor repudiandae quibusdam aut!</p></li>
+          <li><a href="https://google.com"><h3>project 3</h3></a><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, odit? Illo distinctio eos assumenda molestias odit, error deserunt illum itaque. Facere cumque numquam temporibus consequuntur nemo libero aspernatur itaque dolore?</p></li>
+          <li><a href="https://google.com"><h3>project 4</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptatum delectus assumenda quae reprehenderit aut, quam, at minima, mollitia obcaecati eos. Ea rem quos doloremque, ratione eaque explicabo sunt quaerat!</p></li>
+            <li><a href="https://linkedin.com"><h4>git more</h4></a></li>
 
-      <li><a href="https://google.com.au">article 1</a></li>
-      <li><a href="https://google.com.au">article 2</a></li>
-      <li><a href="https://google.com.au">article 3</a></li>
-      <li><a href="https://google.com.au">article 4</a></li>
-    </ul>
-  </section>
-  <section class="flex articles">
-    <h3>Articles</h3>
-    <ul>
+          </ul>
 
-      <li><a href="https://google.com.au">side 1</a></li>
-      <li><a href="https://google.com.au">side 2</a></li>
-      <li><a href="https://google.com.au">side 3</a></li>
-      <li><a href="https://google.com.au">side 4</a></li>
-    </ul>
+        </section>
+        <section id="sideprojects">
+          <h3>What I dabble in</h3>
 
-  </section>
-  <section class="calendar flex">
-<p>Meet me at</p>
-  </section>
-  <nav>
-    <ul class="flex l-nav">
-      <li><a href="#">Projects</a></li>
-      <li><a href="#"></a>Side projects</li>
-      <li><a href="#"></a>Articles</li>
-    </ul>
-  </nav>
+          <ul>
+            <li><a href="https://google.com.au"><h3>article 1</h3></a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolorum quod obcaecati? Quam totam asperiores aliquam fuga ullam fugiat, doloremque labore architecto eaque quibusdam, dolor quas atque accusamus. Unde, sed.</p></li>
+              <li><a href="https://google.com.au"><h3>article 2</h3></a><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima illum placeat architecto, porro, laboriosam excepturi repudiandae tempore ratione sunt fugiat, consequatur cumque. Ipsum ut fugiat nisi, ab nulla ipsam quos.</p></li>
+              <li><a href="https://google.com.au"><h3>article 3</h3></a><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis tempore odit quasi vero minima optio eligendi, voluptates debitis eos alias earum, dicta molestiae nihil. Quaerat et cupiditate, omnis minima vero?</p></li>
+              <li><a href="https://google.com.au"><h3>article 4</h3></a><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere laboriosam similique accusantium recusandae dolore expedita iure? Error deleniti sunt necessitatibus ipsum ducimus, sit amet, voluptatibus quo explicabo perferendis eius! Perferendis!</p></li>
+              <li><a href="https://linkedin.com" class="more"><h4>git more</h4></a></li>
+
+            </ul>
+
+          </section>
+        </main>
+        <aside class="l-aside">
+          <section>
+            <h3> Experience</h3>
+            <ul>
+              <li><a href="https://google.com.au"><h3>Experience 1</h3></a></li>
+              <li><a href="https://google.com.au"><h3>Experience 2</h3></a></li>
+              <li><a href="https://google.com.au"><h3>Experience 3</h3></a></li>
+              <li><a href="https://google.com.au"><h3>Experience 4</h3></a></li>
+              <li><a href="https://google.com.au"><h3>Experience 4</h3></a></li>
+
+              <li><a href="https://linkedin.com" class="more"><h4>download resume</h4></a></li>
+
+            </ul>
+          </section>
+          <section>
+            <h3>Socialize</h3>
+            <ul class="l-horizontal">
+              <li><a href="https://linkedin.com">Linkedin</a></li>
+              <li><a href="https://linkedin.com">Mail</a></li>
+              <li><a href="https://linkedin.com">Git</a></li>
+              <li><a href="https://linkedin.com">Medium</a></li>
+
+            </ul>
+          </section>
+
+        </aside>
+        <section class="l-calendar"> <h4>meet me at <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ivan.rahn%40gmail.com&amp;color=%232F6309&amp;ctz=Australia%2FSydney" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe></h4></section>
+        <nav class="l-nav">
+          <ul class="l-horizontal">
+            <li><a href="#work">work</a></li>
+            <li><a href="#sideprojects">Sideprojects</a></li>
+            <li><a href="#l-aside">Experience</a></li>
+          </ul>
+
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    axios.get('https://calendar.google.com/calendar/ical/ivan.rahn%40gmail.com/public/basic.ics')
+      .then(function (res) {
+        console.log(res);
+      });
+  </script>
 </body>
 </html>
