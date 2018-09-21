@@ -1,16 +1,64 @@
-.flex {
+.l-container {
+  border: 2px solid red;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  border: 2px solid blue;
+}
+@media only screen and (min-width: 600px) {
+  .l-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.l-main {
+  scroll-behavior: smooth;
+}
+@media only screen and (min-width: 600px) {
+  .l-main {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .l-main section {
+    width: 49%;
+  }
+}
+
+.l-aside {
+  scroll-behavior: smooth;
+}
+@media only screen and (min-width: 600px) {
+  .l-aside {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .l-aside > section {
+    width: 100%;
+  }
 }
 
 .l-nav {
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-around;
-  position: fixed;
+  background-color: black;
+  position: sticky;
   bottom: 0;
+}
+@media only screen and (min-width: 600px) {
+  .l-nav {
+    display: none;
+  }
+}
+
+.l-horizontal {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.l-calendar {
+  width: 100%;
 }
 
 /*# sourceMappingURL=layout.css.map */
