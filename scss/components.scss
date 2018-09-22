@@ -1,0 +1,13 @@
+
+/*<a> additional content*/
+.c-link {
+  &-additional {
+    text-align: center;
+    &::before {
+      content: '...[';
+    }
+    &::after {
+      content: ']...';
+    }
+  }
+}
