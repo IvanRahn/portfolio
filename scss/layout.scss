@@ -5,6 +5,7 @@
   flex-direction: column;
   @media only screen and (min-width: 900px) {
     flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 }
@@ -35,21 +36,33 @@
 }
 .l-main {
   @media only screen and (min-width: 600px) {
-  display: flex;
-  justify-content: space-around;
-  &-constricted {
-    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    &-constricted {
+      width: 50%;
+    }
   }
 }
-}
 .l-aside {
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 900px) {
     width: 30%;
-    flex-wrap: wrap;
-    align-items: stretch;
+  }
+  &-constricted {
+    @media only screen and (max-width: 900px) and (min-width: 600px) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      &-content {
+        width: 50%;
+      }
+    }
+  }
 }
-}
-
+// .l-aside-constricted {
+//   @media only screen and (min-width: 600px) and (max-width: 899px) {
+//     width: 50%;
+//   }
+// }
 .l-footer {
   width: 100%;
 }

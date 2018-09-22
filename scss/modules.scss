@@ -1,18 +1,35 @@
 .content {
   // height: 25%;
   padding-bottom: 16px;
-  max-width:380px;
+  max-width:300px;
   &-link {
+    span {
+      color: $black;
+      display: inline-block;
+      text-decoration: none;
+      transition: box-shadow ease 1000ms;
+    }
+    &:hover {
+      // redo
+      span {
+        color: $off-white;
+        box-shadow: inset 150px 0 0 0 $blue;
+      }
+    }
   }
   &-block {
     color: $black;
   }
 }
 
-.m-header {
+.m-hero {
   max-width: 640px;
   padding: 8px;
   @media only screen and (min-width: 600px) {
-    padding: 16px;
+    padding: 16px 16px 44px;
+  }
+  &-standfirst {
+    font-size: 24px;
+    line-height: 32px;
   }
 }

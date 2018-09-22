@@ -5,6 +5,7 @@
 @media only screen and (min-width: 900px) {
   .l-container {
     flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 }
@@ -45,11 +46,19 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   .l-aside {
     width: 30%;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  .l-aside-constricted {
+    display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    width: 100%;
+  }
+  .l-aside-constricted-content {
+    width: 50%;
   }
 }
 

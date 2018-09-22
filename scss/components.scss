@@ -2,7 +2,6 @@
 /*<a> additional content*/
 .c-link {
   &-additional {
-    text-align: center;
     &::before {
       content: '...[';
     }
@@ -10,4 +9,13 @@
       content: ']...';
     }
   }
+}
+.underline {
+  border-bottom: 2px solid black;
+}
+.stop-borders {
+  border-bottom: 8px solid $blue;
+  width: 96px;
+  // left: 16px;
+  position: absolute;
 }

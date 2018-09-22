@@ -15,6 +15,8 @@ body {
   background-color: #eee;
   color: #333;
   box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 main {
@@ -23,14 +25,6 @@ main {
 
 aside {
   padding: 8px;
-}
-
-header::after {
-  display: block;
-  content: "";
-  height: 10px;
-  width: 100%;
-  background-color: #333;
 }
 
 section {
@@ -51,7 +45,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 h3 {
@@ -87,6 +81,7 @@ ul {
 @media only screen and (min-width: 900px) {
   .l-container {
     flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 }
@@ -127,19 +122,19 @@ ul {
   }
 }
 
-.l-aside {
-  display: flex;
-}
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   .l-aside {
-    flex-wrap: wrap;
-    align-items: stretch;
+    width: 30%;
   }
 }
-@media only screen and (max-width: 600px) and (min-width: 900px) {
-  .l-aside-horizontal {
-    width: 30%;
-    flex-direction: row;
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  .l-aside-constricted {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .l-aside-constricted-content {
+    width: 50%;
   }
 }
 
@@ -149,31 +144,52 @@ ul {
 
 .content {
   padding-bottom: 16px;
-  max-width: 380px;
+  max-width: 300px;
+}
+.content-link span {
+  color: #333;
+  display: inline-block;
+  text-decoration: none;
+  transition: box-shadow ease 1000ms;
+}
+.content-link:hover span {
+  color: #eee;
+  box-shadow: inset 150px 0 0 0 #007dda;
 }
 .content-block {
   color: #333;
 }
 
-.m-header {
+.m-hero {
   max-width: 640px;
   padding: 8px;
 }
 @media only screen and (min-width: 600px) {
-  .m-header {
-    padding: 16px;
+  .m-hero {
+    padding: 16px 16px 44px;
   }
+}
+.m-hero-standfirst {
+  font-size: 24px;
+  line-height: 32px;
 }
 
 /*<a> additional content*/
-.c-link-additional {
-  text-align: center;
-}
 .c-link-additional::before {
   content: "...[";
 }
 .c-link-additional::after {
   content: "]...";
+}
+
+.underline {
+  border-bottom: 2px solid black;
+}
+
+.stop-borders {
+  border-bottom: 8px solid #007dda;
+  width: 96px;
+  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */
