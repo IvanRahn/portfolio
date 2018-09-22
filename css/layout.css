@@ -1,42 +1,11 @@
 .l-container {
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   .l-container {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-}
-
-.l-main {
-  scroll-behavior: smooth;
-}
-@media only screen and (min-width: 600px) {
-  .l-main {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .l-main section {
-    width: 49%;
-  }
-}
-
-.l-aside {
-  scroll-behavior: smooth;
-}
-@media only screen and (min-width: 600px) {
-  .l-aside {
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-  }
-  .l-aside > section {
-    width: 100%;
   }
 }
 
@@ -57,7 +26,34 @@
   width: 100%;
 }
 
-.l-calendar {
+@media only screen and (min-width: 600px) {
+  .l-big {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .l-main {
+    display: flex;
+    justify-content: space-around;
+  }
+  .l-main-constricted {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .l-aside {
+    width: 30%;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+}
+
+.l-footer {
   width: 100%;
 }
 

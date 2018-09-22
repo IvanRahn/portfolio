@@ -1,0 +1,12 @@
+/*<a> additional content*/
+.c-link-additional {
+  text-align: center;
+}
+.c-link-additional::before {
+  content: "...[";
+}
+.c-link-additional::after {
+  content: "]...";
+}
+
+/*# sourceMappingURL=components.css.map */

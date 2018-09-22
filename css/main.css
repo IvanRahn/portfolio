@@ -1,122 +1,93 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i|Merriweather+Sans");
-html, body, header, article, h1, h2, h3, p, nav, ul, li {
+html, body, main, aside, header, section, article, h1, h2, h3, p, nav, ul, li {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+  height: 100vh;
 }
 
 body {
-  font-family: Lato, Arial, sans-serif;
+  font-family: PTSans, Helvetica, Arial, sans-serif;
   font-size: 15px;
+  background-color: #eee;
+  color: #333;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 8px;
+}
+
+aside {
+  padding: 8px;
+}
+
+header::after {
+  display: block;
+  content: "";
+  height: 10px;
+  width: 100%;
+  background-color: #333;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 8px;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+  line-height: 0.9em;
+  padding-bottom: 24px;
+}
+
+h2 {
+  font-size: 24px;
+  padding-bottom: 24px;
+}
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 20px;
+  padding-bottom: 8px;
 }
 
 a {
-  color: green;
+  color: #333;
   text-decoration: none;
 }
 a:hover {
   color: red;
 }
 a:visited {
-  color: cyan;
-}
-a.more::before {
-  content: "...[";
-}
-a.more::after {
-  content: "]...";
-}
-
-h1 {
-  font-family: MerriweatherSans;
-  font-size: 78px;
-  letter-spacing: 1px;
-  margin: 0;
-}
-h1::after {
-  display: block;
-  content: "";
-  height: 10px;
-  width: 100%;
-  background-color: black;
-}
-
-h2 {
-  font-family: Merriweather;
-  font-size: 140%;
-  letter-spacing: 0.5px;
-  margin: 1%;
-  text-align: center;
-}
-
-h3 {
-  text-align: center;
-  font-size: 120%;
-  letter-spacing: 0.5px;
-  margin: 2%;
-}
-
-h4 {
-  text-align: center;
-  font-size: 120%;
-  display: inline;
-  width: 100%;
+  color: blue;
 }
 
 ul {
   list-style-type: none;
 }
-ul li {
-  margin: 10px;
-  text-align: center;
-}
-
-section {
-  border: 1px solid blue;
-}
 
 .l-container {
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   .l-container {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-}
-
-.l-main {
-  scroll-behavior: smooth;
-}
-@media only screen and (min-width: 600px) {
-  .l-main {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .l-main section {
-    width: 49%;
-  }
-}
-
-.l-aside {
-  scroll-behavior: smooth;
-}
-@media only screen and (min-width: 600px) {
-  .l-aside {
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-  }
-  .l-aside > section {
-    width: 100%;
   }
 }
 
@@ -137,8 +108,72 @@ section {
   width: 100%;
 }
 
-.l-calendar {
+@media only screen and (min-width: 600px) {
+  .l-big {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .l-main {
+    display: flex;
+    justify-content: space-around;
+  }
+  .l-main-constricted {
+    width: 50%;
+  }
+}
+
+.l-aside {
+  display: flex;
+}
+@media only screen and (min-width: 600px) {
+  .l-aside {
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+}
+@media only screen and (max-width: 600px) and (min-width: 900px) {
+  .l-aside-horizontal {
+    width: 30%;
+    flex-direction: row;
+  }
+}
+
+.l-footer {
   width: 100%;
+}
+
+.content {
+  padding-bottom: 16px;
+  max-width: 380px;
+}
+.content-block {
+  color: #333;
+}
+
+.m-header {
+  max-width: 640px;
+  padding: 8px;
+}
+@media only screen and (min-width: 600px) {
+  .m-header {
+    padding: 16px;
+  }
+}
+
+/*<a> additional content*/
+.c-link-additional {
+  text-align: center;
+}
+.c-link-additional::before {
+  content: "...[";
+}
+.c-link-additional::after {
+  content: "]...";
 }
 
 /*# sourceMappingURL=main.css.map */

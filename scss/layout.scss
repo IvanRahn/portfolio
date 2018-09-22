@@ -1,36 +1,14 @@
+
+
 .l-container {
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 900px) {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-.l-main {
-  scroll-behavior: smooth;
-  @media only screen and (min-width: 600px) {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    section {
-      width: 49%;
-    }
-  }
-}
-.l-aside {
-  scroll-behavior: smooth;
-  @media only screen and (min-width: 600px) {
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    &>section {
-      width: 100%;
-    }
-  }
-}
+
 .l-nav {
   background-color: black;
   position: sticky;
@@ -46,6 +24,32 @@
   width: 100%;
 }
 
-.l-calendar {
+.l-big {
+  @media only screen and (min-width: 600px) {
+    width: 70%;
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.l-main {
+  @media only screen and (min-width: 600px) {
+  display: flex;
+  justify-content: space-around;
+  &-constricted {
+    width: 50%;
+  }
+}
+}
+.l-aside {
+  @media only screen and (min-width: 600px) {
+    width: 30%;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+}
+
+.l-footer {
   width: 100%;
 }
