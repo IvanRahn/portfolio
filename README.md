@@ -8,6 +8,7 @@ This website is a portfolio I created for myself.
 The website is not very complicated but has a nice clean look.
 
 Features: animations, copy to clipboard for email links, mobile navbar.
+During the development of the website I took into consideration SMACSS methodology and graceful degradation mindset.
 
 #### Sitemap:
 The website consist of 4 sections: Header, Projects, Activities and Experience.
@@ -15,17 +16,17 @@ On desktop the sections are in direct view upon opening the page.
 The navbar appears when viewed on mobile and the sections are accessible either though navbar or by scrolling.
 
 #### Screenshots:
-![screenshot1](docs/Screen Shot 2018-09-24 at 1.45.51 am.png)
+![screenshot1](docs/Screen1.png)
 
-![screenshot2](docs/Screen Shot 2018-09-24 at 1.46.52 am.png)
+![screenshot2](docs/Screen2.png)
 
-![screenshot3](docs/Screen Shot 2018-09-24 at 1.46.52 am.png)
+![screenshot3](docs/Screen3.png)
 
-![screenshot4](docs/Screen Shot 2018-09-24 at 1.47.13 am.png)
+![screenshot4](docs/Screen4.png)
 
-![screenshot5](docs/Screen Shot 2018-09-24 at 1.47.23 am.png)
+![screenshot5](docs/Screen5.png)
 
-![screenshot16](docs/Screen Shot 2018-09-24 at 1.47.29 am.png)
+![screenshot16](docs/Screen6.png)
 
 ### Target audience:
 The target audience is senior developers, CTOs and recruiters.
@@ -43,6 +44,7 @@ I also took into consideration the user journey:
 3. The user should be able to easily browse my activities, projects and Experience
 4. The user should see a call to action
 5. After checking the information on the website the user should be able to easily contact me through social media or email.
+
 
 ### Wireframes and designs
 
