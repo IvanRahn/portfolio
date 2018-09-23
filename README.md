@@ -1,13 +1,13 @@
 # Portfolio Website
 
-###URL link: https://ivanrahn.github.io/portfolio/
+#### URL link: https://ivanrahn.github.io/portfolio/
 
-### Github link: https://github.com/IvanRahn/portfolio
+#### Github link: https://github.com/IvanRahn/portfolio
 
 This website is a portfolio I created for myself.
 The website is not very complicated but has a nice clean look.
 
-Features: animations, copy to clipboard for email links, mobile navbar
+Features: animations, copy to clipboard for email links, mobile navbar.
 
 #### Sitemap:
 The website consist of 4 sections: Header, Projects, Activities and Experience.
@@ -15,12 +15,17 @@ On desktop the sections are in direct view upon opening the page.
 The navbar appears when viewed on mobile and the sections are accessible either though navbar or by scrolling.
 
 #### Screenshots:
-![alt text](docs/Screen Shot 2018-09-24 at 1.45.51 am.png)
-![alt text](docs/Screen Shot 2018-09-24 at 1.46.52 am.png)
-![alt text](docs/Screen Shot 2018-09-24 at 1.46.52 am.png)
-![alt text](docs/Screen Shot 2018-09-24 at 1.47.13 am.png)
-![alt text](docs/Screen Shot 2018-09-24 at 1.47.23 am.png)
-![alt text](docs/Screen Shot 2018-09-24 at 1.47.29 am.png)
+![screenshot1](docs/Screen Shot 2018-09-24 at 1.45.51 am.png)
+
+![screenshot2](docs/Screen Shot 2018-09-24 at 1.46.52 am.png)
+
+![screenshot3](docs/Screen Shot 2018-09-24 at 1.46.52 am.png)
+
+![screenshot4](docs/Screen Shot 2018-09-24 at 1.47.13 am.png)
+
+![screenshot5](docs/Screen Shot 2018-09-24 at 1.47.23 am.png)
+
+![screenshot16](docs/Screen Shot 2018-09-24 at 1.47.29 am.png)
 
 ### Target audience:
 The target audience is senior developers, CTOs and recruiters.
@@ -40,19 +45,19 @@ I also took into consideration the user journey:
 5. After checking the information on the website the user should be able to easily contact me through social media or email.
 
 ### Wireframes and designs
-![alt text](docs/Ivan-04.jpg)
-![alt text](docs/Ivan-05.jpg)
-![alt text](docs/Ivan-14.jpg)
-![alt text](docs/Ivan-15.jpg)
 
+![wireframe desktop](docs/Ivan-14.jpg)
+![wireframe mobile](docs/Ivan-15.jpg)
+![design desktop](docs/Ivan-04.jpg)
+![design mobile](docs/Ivan-05.jpg)
 ### Personal logo
 
-![alt text](docs/Ivan-crest-export-v6-03.svg)
+![my logo](docs/Ivan-crest-export-v6-03.svg)
 
 ### Trello
 
-![alt text](docs/trello.png)
-![alt text](docs/trello-2.png)
+![trello board](docs/trello.png)
+![trello board](docs/trello-2.png)
 
 
 ### Brief History of Internet
