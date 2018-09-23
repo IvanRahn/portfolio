@@ -1,0 +1,51 @@
+.content {
+  padding-bottom: 16px;
+  max-width: 300px;
+}
+.content-link span {
+  background-color: transparent;
+  color: #192a36;
+  display: inline-block;
+  padding: 0 3px;
+  position: relative;
+  text-decoration: underline;
+  transition: color ease 0.3s;
+  z-index: 0;
+}
+.content-link span::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #007dda;
+  transition: all ease 0.3s;
+}
+.content-link:hover span {
+  text-decoration: none;
+  color: #eee;
+}
+.content-link:hover span::before {
+  width: 100%;
+}
+.content-block {
+  color: #333;
+}
+
+.m-hero {
+  max-width: 640px;
+  padding: 8px;
+}
+@media only screen and (min-width: 600px) {
+  .m-hero {
+    padding: 16px 16px 44px;
+  }
+}
+.m-hero-standfirst {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+/*# sourceMappingURL=modules.css.map */

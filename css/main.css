@@ -147,14 +147,32 @@ ul {
   max-width: 300px;
 }
 .content-link span {
-  color: #333;
+  background-color: transparent;
+  color: #192a36;
   display: inline-block;
-  text-decoration: none;
-  transition: box-shadow ease 1000ms;
+  padding: 0 3px;
+  position: relative;
+  text-decoration: underline;
+  transition: color ease 0.3s;
+  z-index: 0;
+}
+.content-link span::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #007dda;
+  transition: all ease 0.3s;
 }
 .content-link:hover span {
+  text-decoration: none;
   color: #eee;
-  box-shadow: inset 150px 0 0 0 #007dda;
+}
+.content-link:hover span::before {
+  width: 100%;
 }
 .content-block {
   color: #333;

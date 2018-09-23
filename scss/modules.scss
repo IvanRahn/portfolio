@@ -1,22 +1,46 @@
+$black: #333;
+$grey: #ccc;
+$off-white: #eee;
+$blue: #007dda;
+
 .content {
   // height: 25%;
   padding-bottom: 16px;
   max-width:300px;
   &-link {
     span {
-      color: $black;
-      display: inline-block;
-      text-decoration: none;
-      transition: box-shadow ease 1000ms;
+    background-color: transparent;
+    color: #192a36;
+    display: inline-block;
+    padding: 0 3px;
+    position: relative;
+    text-decoration: underline;
+    transition: color ease 0.3s;
+    z-index: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 0;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      background-color: $blue;
+      transition: all ease 0.3s;
     }
+}
     &:hover {
-      // redo
       span {
-        color: $off-white;
-        box-shadow: inset 150px 0 0 0 $blue;
+      text-decoration: none;
+      color: $off-white;
+
+      &::before {
+        width: 100%;
       }
-    }
+    }}
   }
+
   &-block {
     color: $black;
   }
