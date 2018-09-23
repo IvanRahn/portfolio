@@ -16,7 +16,7 @@ body {
   background-color: #eee;
   color: #333;
   box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   line-height: 150%;
 }
@@ -66,7 +66,7 @@ a {
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: red;
+  color: #eee;
 }
 a:visited {
   color: blue;
@@ -103,13 +103,13 @@ i {
   width: 100%;
 }
 .l-nav--bottom {
-  background-color: black;
   position: sticky;
   bottom: 0;
 }
 .l-nav-horizontal {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 .l-nav-left {
@@ -136,6 +136,11 @@ i {
     justify-content: center;
   }
 }
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  .l-container {
+    width: 100%;
+  }
+}
 
 @media only screen and (min-width: 600px) {
   .l-main {
@@ -158,8 +163,11 @@ i {
     flex-wrap: wrap;
     width: 100%;
   }
-  .l-aside-constricted-content {
+  .l-aside-constricted section {
     width: 50%;
+  }
+  .l-aside-constricted section:nth-child(1) {
+    width: 100%;
   }
 }
 
@@ -236,10 +244,29 @@ i {
   padding: 0;
   margin-bottom: 32px;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   .SM-icons {
     width: 25%;
   }
+}
+
+.bottom {
+  background-color: #d4d4d4;
+  box-shadow: 0 -2px 1px 0 rgba(0, 0, 0, 0.19);
+  height: 40px;
+}
+.bottom-active a {
+  color: #F38A8A;
+  border-bottom: 3px solid #F38A8A;
+}
+.bottom a {
+  color: #a9a9a9;
+}
+.bottom a:hover, .bottom a:focus {
+  color: #eee;
+}
+.bottom a:visited {
+  color: #a9a9a9;
 }
 
 /*<a> additional content*/
@@ -272,6 +299,11 @@ i {
   height: auto;
   color: #007dda;
   margin: 0 auto;
+}
+@media only screen and (min-width: 900px) {
+  .crest {
+    margin: initial;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

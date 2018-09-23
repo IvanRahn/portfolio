@@ -14,13 +14,13 @@
   // border: 2px solid blue;
   width: 100%;
   &--bottom {
-    background-color: black;
     position: sticky;
     bottom: 0;
   }
   &-horizontal {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
   }
   &-left {
@@ -51,6 +51,7 @@
 
 
 .l-container {
+
   @media only screen and (min-width: 600px) {
     width: 65%;
     display: flex;
@@ -58,6 +59,9 @@
     flex-direction: column;
     justify-content: center;
   }
+  @media only screen and (max-width: 900px) and (min-width: 600px) {
+width: 100%;
+}
 }
 .l-main {
   @media only screen and (min-width: 600px) {
@@ -71,7 +75,7 @@
 .l-aside {
 
   // display: flex;
-//   flex-direction: column;
+  // flex-direction: column;
 //   justify-content: center;
 //   align-items: center;
 //
@@ -87,17 +91,16 @@
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      &-content {
+      section {
         width: 50%;
+      }
+      section:nth-child(1){
+        width: 100%;
       }
     }
   }
 }
-// .l-aside-constricted {
-//   @media only screen and (min-width: 600px) and (max-width: 899px) {
-//     width: 50%;
-//   }
-// }
+
 .l-footer {
   width: 100%;
 }

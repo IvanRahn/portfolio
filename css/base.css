@@ -15,7 +15,7 @@ body {
   background-color: #eee;
   color: #333;
   box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   line-height: 150%;
 }
@@ -65,7 +65,7 @@ a {
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: red;
+  color: #eee;
 }
 a:visited {
   color: blue;

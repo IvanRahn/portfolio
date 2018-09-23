@@ -8,7 +8,10 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
-
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <title>Portfolio</title>
 </head>
 <!-- body start, contains 3 sections: main, aside and footer -->
@@ -23,8 +26,8 @@
     <!-- header end -->
     <!-- projects start -->
     <main class="l-main">
-      <section class="l-main-constricted" id="work">
-        <h2><span class="underline">Projects</span></h2>
+      <section class="l-main-constricted" >
+        <h2 id="projects"><span class="underline">Projects</span></h2>
         <article class="content">
           <a href="https://github.com/IvanRahn/Breathe" class="content-link">
             <div class="content-block">
@@ -52,7 +55,7 @@
 
       <!-- projects end -->
       <!-- side projects start -->
-      <section class="l-main-constricted" id="Activities">
+      <section class="l-main-constricted">
         <h2><span class="underline">Activities</span></h2>
         <article class="content">
           <a href="" class="content-link">
@@ -84,13 +87,13 @@
   <!-- main end -->
   <!-- aside start, contains experience and social media links -->
   <!-- experience -->
-  <div class="l-aside" id="#aside">
+  <div class="l-aside">
     <aside class="l-aside-constricted">
-      <section class="l-aside-contstricted-content">
-        <img class="crest" src="resources/ivan-crest-02.svg" alt="">
+      <section class="l-aside-contstricted-content" >
+        <img class="crest" src="resources/Ivan-crest-export-v6-03.svg" alt="ivan's logo">
       </section>
-      <section>
-        <h2><span class="underline">Experience</span></h2>
+      <section class="l-aside-constricted-content" >
+        <h2 id="experience"><span class="underline">Experience</span></h2>
         <article class="content">
           <div class="content-block">
             <h3>Coder Academy</h3>
@@ -110,12 +113,12 @@
         </article>
 
 
-        <a href="" class="content-link c-link-additional down"><span>[download resume]</span></a>
+        <a href="resources/Profile.pdf" class="content-link c-link-additional" download="newfilename"><span>[download resume]</span></a>
       </section>
       <!-- experience end -->
       <!-- social media start -->
-      <section class="l-nav">
-        <h2><span class="underline">Find me on the webs</span></h2>
+      <section class="l-nav" id="contact">
+        <h2 id="contact"><span class="underline">Find me on the webs</span></h2>
         <div class="l-nav-horizontal l-nav-left">
 
           <div class="SM-icons">
@@ -125,8 +128,8 @@
           </div>
 
           <div class="SM-icons"><a href="https://github.com/IvanRahn" class="content-link"><i class="fab fa-github"></i><p class="content-block-additional"><span>View activity</span></p></a></div>
-          <div class="SM-icons"><a href="https://medium.com/@ivanrahn" class="content-link"><i class="fab fa-medium-m"></i><p class="content-block-additional"><span>Read my posts</span></p></a></div>
-          <div class="SM-icons"><a class="c-sm content-link" data-clipboard-text="ivan.rahn@gmail.com" id="email"><i class="far fa-envelope"></i><p class="content-block-additional"><span>Grab my email</span></p></a></div>
+          <div class="SM-icons"><a href="https://medium.com/@ivanrahn" class="content-link"><i class="fab fa-medium-m"></i><p class="content-block-additional"><span>Read blog</span></p></a></div>
+          <div class="SM-icons"><a class="c-sm content-link" data-clipboard-text="ivan.rahn@gmail.com" id="email"><i class="far fa-envelope"></i><p class="content-block-additional"><span id="change-content">Grab my email</span></p></a></div>
 
         </div>
       </section>
@@ -139,11 +142,11 @@
     <footer> <h4>meet me at SydJS meetup on 26/09/2018</h4></footer>
   </div>
   <!-- navbar start -->
-  <nav class="l-nav l-nav--bottom is-hidden" id="#navbar">
-    <ul class="l-nav-horizontal">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#sideprojects">Sideprojects</a></li>
-      <li><a href="#aside">Experience</a></li>
+  <nav class="l-nav l-nav--bottom l-nav-horizontal is-hidden " >
+    <ul class="l-nav-horizontal bottom" id="#navbar">
+      <li ><a href="#projects" class="content-link"><span>Projects</span></a></li>
+      <li class="content-link"><a href="#experience"><span>Experience</a></span></li>
+      <li class="content-link"><a href="#contact"><span>Contact</a></span></li>
     </ul>
   </nav>
   <!-- navbar end -->
@@ -154,6 +157,16 @@
 
   <script>
   var clip = new Clipboard('#email');
+
+  clip.on('success', function(e) {
+    document.getElementById("change-content").innerHTML="Email copied to clipboard";
+
+    setTimeout(function(){document.getElementById("change-content").innerHTML="Grab my email"; }
+, 2000);
+
+
+  })
+
 </script>
 </body>
 <!-- body end -->
