@@ -75,4 +75,10 @@ $blue: #007dda;
   height: auto;
   color: $blue;
   margin: 0 auto;
+
+  @media only screen and (min-width: 900px) {
+    // width: 100%;
+    margin: initial;
+    // border: 2px solid cyan;
+}
 }

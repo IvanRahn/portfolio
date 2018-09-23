@@ -14,13 +14,13 @@
   width: 100%;
 }
 .l-nav--bottom {
-  background-color: black;
   position: sticky;
   bottom: 0;
 }
 .l-nav-horizontal {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 .l-nav-left {
@@ -47,6 +47,11 @@
     justify-content: center;
   }
 }
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  .l-container {
+    width: 100%;
+  }
+}
 
 @media only screen and (min-width: 600px) {
   .l-main {
@@ -69,8 +74,11 @@
     flex-wrap: wrap;
     width: 100%;
   }
-  .l-aside-constricted-content {
+  .l-aside-constricted section {
     width: 50%;
+  }
+  .l-aside-constricted section:nth-child(1) {
+    width: 100%;
   }
 }
 

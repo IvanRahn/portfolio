@@ -68,10 +68,29 @@
   padding: 0;
   margin-bottom: 32px;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   .SM-icons {
     width: 25%;
   }
+}
+
+.bottom {
+  background-color: #d4d4d4;
+  box-shadow: 0 -2px 1px 0 rgba(0, 0, 0, 0.19);
+  height: 40px;
+}
+.bottom-active a {
+  color: #F38A8A;
+  border-bottom: 3px solid #F38A8A;
+}
+.bottom a {
+  color: #a9a9a9;
+}
+.bottom a:hover, .bottom a:focus {
+  color: #eee;
+}
+.bottom a:visited {
+  color: #a9a9a9;
 }
 
 /*# sourceMappingURL=modules.css.map */

@@ -50,6 +50,7 @@ $blue: #007dda;
         }
       }
     }
+
   }
 
   &-block {
@@ -82,9 +83,27 @@ $blue: #007dda;
       padding: 0;
       margin-bottom: 32px;
     }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 900px) {
       width: 25%;
 }
 
 
+}
+.bottom {
+  background-color: #d4d4d4;
+  box-shadow: 0 -2px 1px 0 rgba(0,0,0,.19);
+  height: 40px;
+  &-active  a{
+         color:#F38A8A;
+         border-bottom:3px solid #F38A8A;
+        }
+a {
+  color: $grey;
+  &:hover, &:focus {
+    color: $off-white;
+  }
+  &:visited {
+    color: $grey;
+  }
+}
 }
