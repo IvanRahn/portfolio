@@ -1,18 +1,65 @@
+$black: #333;
+$grey: #ccc;
+$off-white: #eee;
+$blue: #007dda;
+
 .content {
   // height: 25%;
   padding-bottom: 16px;
-  max-width:380px;
+  max-width:300px;
   &-link {
+    span {
+    background-color: transparent;
+    color: #192a36;
+    display: inline-block;
+    padding: 0 3px;
+    position: relative;
+    text-decoration: underline;
+    transition: color ease 0.3s;
+    z-index: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 0;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      background-color: $blue;
+      transition: all ease 0.3s;
+    }
+}
+    &:hover {
+      span {
+      text-decoration: none;
+      color: $off-white;
+
+      &::before {
+        width: 100%;
+      }
+    }}
   }
+
   &-block {
     color: $black;
+    &-additional {
+      color: $grey;
+      font-size: 12px;
+
+    }
   }
 }
 
-.m-header {
+.m-hero {
   max-width: 640px;
   padding: 8px;
+  margin-top: 64px;
   @media only screen and (min-width: 600px) {
-    padding: 16px;
+    padding: 16px 16px 44px;
+  }
+  &-standfirst {
+    font-size: 24px;
+    line-height: 32px;
   }
 }

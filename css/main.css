@@ -15,6 +15,8 @@ body {
   background-color: #eee;
   color: #333;
   box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 main {
@@ -23,14 +25,6 @@ main {
 
 aside {
   padding: 8px;
-}
-
-header::after {
-  display: block;
-  content: "";
-  height: 10px;
-  width: 100%;
-  background-color: #333;
 }
 
 section {
@@ -51,7 +45,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 h3 {
@@ -80,36 +74,40 @@ ul {
   list-style-type: none;
 }
 
-.l-container {
+.l-body {
   display: flex;
   flex-direction: column;
 }
 @media only screen and (min-width: 900px) {
-  .l-container {
+  .l-body {
     flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 }
 
 .l-nav {
+  width: 100%;
+}
+.l-nav--bottom {
   background-color: black;
   position: sticky;
   bottom: 0;
 }
-@media only screen and (min-width: 600px) {
-  .l-nav {
-    display: none;
-  }
-}
-
-.l-horizontal {
+.l-nav-horizontal {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
-  .l-big {
+  .is-hidden {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .l-container {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -127,19 +125,19 @@ ul {
   }
 }
 
-.l-aside {
-  display: flex;
-}
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   .l-aside {
-    flex-wrap: wrap;
-    align-items: stretch;
+    width: 30%;
   }
 }
-@media only screen and (max-width: 600px) and (min-width: 900px) {
-  .l-aside-horizontal {
-    width: 30%;
-    flex-direction: row;
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  .l-aside-constricted {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .l-aside-constricted-content {
+    width: 50%;
   }
 }
 
@@ -149,31 +147,78 @@ ul {
 
 .content {
   padding-bottom: 16px;
-  max-width: 380px;
+  max-width: 300px;
+}
+.content-link span {
+  background-color: transparent;
+  color: #192a36;
+  display: inline-block;
+  padding: 0 3px;
+  position: relative;
+  text-decoration: underline;
+  transition: color ease 0.3s;
+  z-index: 0;
+}
+.content-link span::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #007dda;
+  transition: all ease 0.3s;
+}
+.content-link:hover span {
+  text-decoration: none;
+  color: #eee;
+}
+.content-link:hover span::before {
+  width: 100%;
 }
 .content-block {
   color: #333;
 }
+.content-block-additional {
+  color: #ccc;
+  font-size: 12px;
+}
 
-.m-header {
+.m-hero {
   max-width: 640px;
   padding: 8px;
+  margin-top: 64px;
 }
 @media only screen and (min-width: 600px) {
-  .m-header {
-    padding: 16px;
+  .m-hero {
+    padding: 16px 16px 44px;
   }
+}
+.m-hero-standfirst {
+  font-size: 24px;
+  line-height: 32px;
 }
 
 /*<a> additional content*/
-.c-link-additional {
-  text-align: center;
-}
 .c-link-additional::before {
   content: "...[";
 }
 .c-link-additional::after {
   content: "]...";
+}
+
+.underline {
+  border-bottom: 2px solid black;
+}
+
+.stop-borders {
+  background-color: #007dda;
+  padding: 16px 16px 8px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #eee;
+  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */
