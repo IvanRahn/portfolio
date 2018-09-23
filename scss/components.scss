@@ -1,15 +1,20 @@
 
 /*<a> additional content*/
-.c-link {
-  &-additional {
-    &::before {
-      content: '...[';
-    }
-    &::after {
-      content: ']...';
-    }
-  }
-}
+$black: #333;
+$grey: #a9a9a9;
+$off-white: #eee;
+$blue: #007dda;
+
+// .c-link {
+//   &-additional {
+//     &::before {
+//       content: '[';
+//     }
+//     &::after {
+//       content: ']';
+//     }
+//   }
+// }
 .underline {
   border-bottom: 2px solid black;
 }
@@ -22,4 +27,52 @@
   color: $off-white;
   // left: 16px;
   position: absolute;
+
+  @media only screen and (min-width: 600px) {
+
+  margin-left: 20px;
+}
+}
+
+
+  .c-sm {
+    display:inline;
+    position:relative;
+    opacity: 1;
+
+  }
+  // .c-sm:hover{text-decoration:none}
+
+  // .c-sm:hover:after{
+  //    background:#111;
+  //    background:rgba(0,0,0,.8);
+  //    border-radius:5px;
+  //    top:20px;
+  //    color:$off-white;
+  //    content:"copy to clipboard";
+  //    display:block;
+  //    left: -80%;
+  //    padding:5px 15px;
+  //    position:absolute;
+  //    white-space:nowrap;
+  //    z-index:98;
+  //    opacity: 1;
+  //    transition: all 1s ease;
+  //   }
+  // .c-sm:hover:before {
+  //     border:solid;
+  //     border-color:#111 transparent;
+  //     border-width: 0 6px 6px 6px;
+  //     top:14px;
+  //     content:"";
+  //     display:block;
+  //     left:40%;
+  //     position:absolute;
+  //     z-index:99
+  //    }
+.crest {
+  width: 136px;
+  height: auto;
+  color: $blue;
+  margin: 0 auto;
 }

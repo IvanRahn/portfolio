@@ -1,4 +1,5 @@
-html, body, main, aside, header, section, article, h1, h2, h3, p, nav, ul, li {
+@charset "UTF-8";
+html, body, main, aside, header, section, article, span, h1, h2, h3, p, nav, ul, li, i {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,6 +18,7 @@ body {
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto;
+  line-height: 150%;
 }
 
 main {
@@ -32,6 +34,7 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   padding: 8px;
+  margin-bottom: 40px;
 }
 
 h1 {
@@ -39,31 +42,30 @@ h1 {
   font-weight: 700;
   letter-spacing: 1px;
   margin: 0;
-  line-height: 0.9em;
+  line-height: 1.1em;
   padding-bottom: 24px;
+  left: -4px;
+  position: relative;
 }
 
 h2 {
   font-size: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 h3 {
   font-size: 16px;
-  padding-bottom: 8px;
 }
 
 p {
   font-size: 15px;
-  line-height: 20px;
-  padding-bottom: 8px;
 }
 
 a {
   color: #333;
   text-decoration: none;
 }
-a:hover {
+a:hover, a:focus {
   color: red;
 }
 a:visited {
@@ -72,6 +74,17 @@ a:visited {
 
 ul {
   list-style-type: none;
+}
+
+i {
+  font-size: 32px;
+  padding-bottom: 16px;
+  color: #a9a9a9;
+}
+@media only screen and (min-width: 600px) {
+  i {
+    font-size: 28px;
+  }
 }
 
 .l-body {
@@ -99,6 +112,15 @@ ul {
   justify-content: space-around;
   width: 100%;
 }
+.l-nav-left {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 600px) {
+  .l-nav-left {
+    justify-content: space-between;
+  }
+}
 
 @media only screen and (min-width: 600px) {
   .is-hidden {
@@ -108,7 +130,7 @@ ul {
 
 @media only screen and (min-width: 600px) {
   .l-container {
-    width: 70%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,7 +149,7 @@ ul {
 
 @media only screen and (min-width: 900px) {
   .l-aside {
-    width: 30%;
+    width: 35%;
   }
 }
 @media only screen and (max-width: 900px) and (min-width: 600px) {
@@ -146,16 +168,15 @@ ul {
 }
 
 .content {
-  padding-bottom: 16px;
+  padding-bottom: 32px;
   max-width: 300px;
 }
 .content-link span {
   background-color: transparent;
   color: #192a36;
   display: inline-block;
-  padding: 0 3px;
+  padding: 0;
   position: relative;
-  text-decoration: underline;
   transition: color ease 0.3s;
   z-index: 0;
 }
@@ -170,44 +191,58 @@ ul {
   background-color: #007dda;
   transition: all ease 0.3s;
 }
-.content-link:hover span {
+.content-link span::after {
+  content: " »";
+  color: #007dda;
+}
+.content-link:hover i, .content-link:focus i {
+  color: #007dda;
+}
+.content-link:hover span, .content-link:focus span {
   text-decoration: none;
   color: #eee;
 }
-.content-link:hover span::before {
+.content-link:hover span::before, .content-link:focus span::before {
   width: 100%;
 }
 .content-block {
   color: #333;
 }
 .content-block-additional {
-  color: #ccc;
-  font-size: 12px;
+  color: #a9a9a9;
+  font-size: 13px;
 }
 
 .m-hero {
   max-width: 640px;
-  padding: 8px;
-  margin-top: 64px;
+  padding: 16px;
+  margin-top: 52px;
 }
 @media only screen and (min-width: 600px) {
   .m-hero {
-    padding: 16px 16px 44px;
+    padding: 16px 16px 40px;
+    margin-top: 96px;
   }
 }
 .m-hero-standfirst {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 150%;
+}
+
+.SM-icons {
+  width: 50%;
+}
+.SM-icons p {
+  padding: 0;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 600px) {
+  .SM-icons {
+    width: 25%;
+  }
 }
 
 /*<a> additional content*/
-.c-link-additional::before {
-  content: "...[";
-}
-.c-link-additional::after {
-  content: "]...";
-}
-
 .underline {
   border-bottom: 2px solid black;
 }
@@ -219,6 +254,24 @@ ul {
   font-size: 24px;
   color: #eee;
   position: absolute;
+}
+@media only screen and (min-width: 600px) {
+  .stop-borders {
+    margin-left: 20px;
+  }
+}
+
+.c-sm {
+  display: inline;
+  position: relative;
+  opacity: 1;
+}
+
+.crest {
+  width: 136px;
+  height: auto;
+  color: #007dda;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

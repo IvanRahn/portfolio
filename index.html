@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
 
   <title>Portfolio</title>
 </head>
 <!-- body start, contains 3 sections: main, aside and footer -->
 <body class="l-body">
-<span class="stop-borders">Hello.</span>
+  <span class="stop-borders">Hello.</span>
   <!-- main start, contains 3 sections: header, projects and sideprojects -->
   <div class="l-container">
     <!-- header start -->
@@ -23,125 +23,138 @@
     <!-- header end -->
     <!-- projects start -->
     <main class="l-main">
-    <section class="l-main-constricted" id="work">
-      <h2><span class="underline">Projects</span></h2>
-      <article class="content">
-        <a href="https://github.com/IvanRahn/Breathe" class="content-link">
+      <section class="l-main-constricted" id="work">
+        <h2><span class="underline">Projects</span></h2>
+        <article class="content">
+          <a href="https://github.com/IvanRahn/Breathe" class="content-link">
+            <div class="content-block">
+              <h3><span>Breathe App</span></h3>
+              <p class="content-block-additional">+ Ruby, Terminal</p>
+              <p>A ruby terminal app that helps users track their smoking habit. Done in collaboration with Natasha Munasinghe</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="content">
+          <a href="https://github.com/IvanRahn/ca-banking_app" class="content-link">
+            <div class="content-block">
+              <h3><span>Banking App</span></h3>
+              <p class="content-block-additional">+ Ruby, Terminal</p>
+
+              <p>A ruby terminal app that imitates an ATM and stores user info, balance and transaction history</p>
+            </div>
+          </a>
+        </article>
+
+        <a href="" class="content-link content-link-bracket"><span>[git more]</span></a>
+
+      </section>
+
+      <!-- projects end -->
+      <!-- side projects start -->
+      <section class="l-main-constricted" id="Activities">
+        <h2><span class="underline">Activities</span></h2>
+        <article class="content">
+          <a href="" class="content-link">
+            <div class="content-block">
+              <h3><span>Codewars</span></h3>
+              <p class="content-block-additional">+ Ruby, JS</p>
+
+              <p>in progress</p>
+            </div>
+          </a>
+        </article>
+        <article class="content">
+          <a href="https://github.com/IvanRahn/Breathe" class="content-link">
+            <div class="content-block">
+              <h3><span>This Website</span></h3>
+              <p class="content-block-additional">+ HTML, SCSS, SMACSS</p>
+
+              <p>The website you are looking at. Done according to SMACSS methodoly, with HTML and SCSS.</p>
+            </div>
+          </a>
+        </article>
+        <!-- <a href="" class="c-link-additional">git more</a> -->
+
+      </section>
+    </main>
+
+    <!-- sideprojects end -->
+  </div>
+  <!-- main end -->
+  <!-- aside start, contains experience and social media links -->
+  <!-- experience -->
+  <div class="l-aside" id="#aside">
+    <aside class="l-aside-constricted">
+      <section class="l-aside-contstricted-content">
+        <img class="crest" src="resources/ivan-crest-02.svg" alt="">
+      </section>
+      <section>
+        <h2><span class="underline">Experience</span></h2>
+        <article class="content">
           <div class="content-block">
-            <h3><span>Breathe App</span></h3>
-            <p class="content-block-additional">+Ruby, Terminal</p>
-            <p>A ruby terminal app that helps users track their smoking habit. Done in collaboration with Natasha Munasinghe</p>
+            <h3>Coder Academy</h3>
+            <p class="content-block-additional">2018 — 2019</p>
+            <p>Full-Stack Dev bootcamp</p>
           </div>
-        </a>
-      </article>
 
-      <article class="content">
-        <a href="https://github.com/IvanRahn/ca-banking_app" class="content-link">
+        </article>
+
+        <article class="content">
           <div class="content-block">
-            <h3><span>Banking App</span></h3>
-            <p class="content-block-additional">+Ruby, Terminal</p>
-
-            <p>A ruby terminal app that imitates an ATM and stores user info, balance and transaction history</p>
+            <h3>PMEC</h3>
+            <p class="content-block-additional">2015 — 2018</p>
+            <p>Optimizing processes</p>
           </div>
-        </a>
-      </article>
 
-      <!-- <a href="" class="c-link-additional">git more</a> -->
+        </article>
 
-    </section>
 
-    <!-- projects end -->
-    <!-- side projects start -->
-    <section class="l-main-constricted" id="Activities">
-      <h2><span class="underline">Activities</span></h2>
-      <article class="content">
-        <a href="" class="content-link">
-          <div class="content-block">
-            <h3><span>Codewars</span></h3>
-            <p class="content-block-additional">+Ruby, JS</p>
+        <a href="" class="content-link c-link-additional down"><span>[download resume]</span></a>
+      </section>
+      <!-- experience end -->
+      <!-- social media start -->
+      <section class="l-nav">
+        <h2><span class="underline">Find me on the webs</span></h2>
+        <div class="l-nav-horizontal l-nav-left">
 
-            <p>in progress</p>
+          <div class="SM-icons">
+            <a href="https://www.linkedin.com/in/ivanran/" class="content-link" target="_blank">
+              <i class="fab fa-linkedin-in" alt="linkedin"></i><p class="content-block-additional"><span>Connect</span></p>
+            </a>
           </div>
-        </a>
-      </article>
-      <article class="content">
-        <a href="https://github.com/IvanRahn/Breathe" class="content-link">
-          <div class="content-block">
-            <h3><span>This Website</span></h3>
-            <p class="content-block-additional">+HTML, SCSS, SMACSS</p>
 
-            <p>The website you are looking at. Done according to SMACSS methodoly, with HTML and SCSS.</p>
-          </div>
-        </a>
-      </article>
-  <!-- <a href="" class="c-link-additional">git more</a> -->
+          <div class="SM-icons"><a href="https://github.com/IvanRahn" class="content-link"><i class="fab fa-github"></i><p class="content-block-additional"><span>View activity</span></p></a></div>
+          <div class="SM-icons"><a href="https://medium.com/@ivanrahn" class="content-link"><i class="fab fa-medium-m"></i><p class="content-block-additional"><span>Read my posts</span></p></a></div>
+          <div class="SM-icons"><a class="c-sm content-link" data-clipboard-text="ivan.rahn@gmail.com" id="email"><i class="far fa-envelope"></i><p class="content-block-additional"><span>Grab my email</span></p></a></div>
 
-</section>
-</main>
-
-<!-- sideprojects end -->
-</div>
-<!-- main end -->
-<!-- aside start, contains experience and social media links -->
-<!-- experience -->
-<div class="l-aside" id="#aside">
-<aside class="l-aside-constricted">
-  <section class="l-aside-contstricted-content">
-    <img src="resources/profile-image.jpeg" alt="">
-  </section>
-  <section>
-    <h2><span class="underline">Experience</span></h2>
-    <article class="content">
-      <a href="" class="content-link">
-        <div class="content-block">
-          <h3>Coder Academy</h3>
-          <p class="content-block-additional">2018-2019</p>
-        <p>Full-Stack Dev bootcamp</p>
         </div>
-      </a>
-    </article>
+      </section>
 
-      <article class="content"><a href="" class="content-link">
-        <div class="content-block">
-          <h3>PMEC</h3>
-          <p class="content-block-additional">2015-2018</p>
-          <p>Optimizing processes</p>
-        </div>
-      </a>
-    </article>
+    </aside>
+  </div>
+  <!-- social media end -->
+  <!-- aside end -->
+  <div class="l-footer">
+    <footer> <h4>meet me at SydJS meetup on 26/09/2018</h4></footer>
+  </div>
+  <!-- navbar start -->
+  <nav class="l-nav l-nav--bottom is-hidden" id="#navbar">
+    <ul class="l-nav-horizontal">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#sideprojects">Sideprojects</a></li>
+      <li><a href="#aside">Experience</a></li>
+    </ul>
+  </nav>
+  <!-- navbar end -->
 
 
-<!-- <a href="" class="c-link-additional">git more</a> -->
-</section>
-<!-- experience end -->
-<!-- social media start -->
-<section class="l-nav">
-  <h3><span class="underline">Find me on the webs</span></h3>
-  <ul class="l-nav-horizontal">
-    <li><a href="https://linkedin.com"><i class="fab fa-linkedin fa-3x"></i>
-</a></li>
-    <li><a href="https://linkedin.com"><i class="fas fa-envelope fa-3x"></i></a></li>
-    <li><a href="https://linkedin.com">Git</a></li>
-    <li><a href="https://linkedin.com">Medium</a></li>
-  </ul>
-</section>
 
-</aside>
-</div>
-<!-- social media end -->
-<!-- aside end -->
-<div class="l-footer">
-<footer> <h4>meet me at </h4></footer>
-</div>
-<!-- navbar start -->
-<nav class="l-nav l-nav--bottom is-hidden" id="#navbar">
-  <ul class="l-nav-horizontal">
-    <li><a href="#work">Work</a></li>
-    <li><a href="#sideprojects">Sideprojects</a></li>
-    <li><a href="#aside">Experience</a></li>
-  </ul>
-</nav>
-<!-- navbar end -->
+
+
+  <script>
+  var clip = new Clipboard('#email');
+</script>
 </body>
 <!-- body end -->
 </html>

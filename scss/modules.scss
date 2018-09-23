@@ -1,51 +1,62 @@
 $black: #333;
-$grey: #ccc;
+$grey: #a9a9a9;
 $off-white: #eee;
 $blue: #007dda;
 
 .content {
   // height: 25%;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
   max-width:300px;
   &-link {
     span {
-    background-color: transparent;
-    color: #192a36;
-    display: inline-block;
-    padding: 0 3px;
-    position: relative;
-    text-decoration: underline;
-    transition: color ease 0.3s;
-    z-index: 0;
+      background-color: transparent;
+      color: #192a36;
+      display: inline-block;
+      padding: 0;
+      position: relative;
+      transition: color ease 0.3s;
+      z-index: 0;
 
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      width: 0;
-      height: 100%;
-      left: 0;
-      bottom: 0;
-      background-color: $blue;
-      transition: all ease 0.3s;
-    }
-}
-    &:hover {
-      span {
-      text-decoration: none;
-      color: $off-white;
 
       &::before {
-        width: 100%;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 0;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: $blue;
+        transition: all ease 0.3s;
       }
-    }}
+
+      &::after {
+        content: " »";
+        // transform: rotate(-135deg);
+        color: $blue;
+      }
+
+    }
+    &:hover, &:focus {
+      i {
+        color: $blue;
+      }
+      span {
+        text-decoration: none;
+        color: $off-white;
+
+        &::before {
+          width: 100%;
+        }
+      }
+    }
   }
 
   &-block {
     color: $black;
     &-additional {
       color: $grey;
-      font-size: 12px;
+      font-size: 13px;
 
     }
   }
@@ -53,13 +64,27 @@ $blue: #007dda;
 
 .m-hero {
   max-width: 640px;
-  padding: 8px;
-  margin-top: 64px;
+  padding: 16px;
+  margin-top: 52px;
   @media only screen and (min-width: 600px) {
-    padding: 16px 16px 44px;
+    padding: 16px 16px 40px;
+    margin-top: 96px;
   }
   &-standfirst {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 150%;
+
   }
+}
+.SM-icons {
+    width: 50%;
+    p {
+      padding: 0;
+      margin-bottom: 32px;
+    }
+    @media only screen and (min-width: 600px) {
+      width: 25%;
+}
+
+
 }
