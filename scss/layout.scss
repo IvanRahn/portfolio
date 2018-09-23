@@ -1,6 +1,6 @@
 
 
-.l-container {
+.l-body {
   display: flex;
   flex-direction: column;
   @media only screen and (min-width: 900px) {
@@ -11,21 +11,36 @@
 }
 
 .l-nav {
-  background-color: black;
-  position: sticky;
-  bottom: 0;
+  width: 100%;
+  &--bottom {
+    background-color: black;
+    position: sticky;
+    bottom: 0;
+  }
+  &-horizontal {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+.is-hidden {
   @media only screen and (min-width: 600px) {
     display: none;
   }
 }
+// {
+//   background-color: black;
+//   position: sticky;
+//   bottom: 0;
+// @media only screen and (min-width: 600px) {
+//   display: none;
+//   }
+// }
 
-.l-horizontal {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
 
-.l-big {
+
+.l-container {
   @media only screen and (min-width: 600px) {
     width: 70%;
     display: flex;

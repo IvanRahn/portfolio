@@ -33,10 +33,15 @@
 .content-block {
   color: #333;
 }
+.content-block-additional {
+  color: #ccc;
+  font-size: 12px;
+}
 
 .m-hero {
   max-width: 640px;
   padding: 8px;
+  margin-top: 64px;
 }
 @media only screen and (min-width: 600px) {
   .m-hero {

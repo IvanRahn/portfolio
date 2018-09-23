@@ -1,9 +1,9 @@
-.l-container {
+.l-body {
   display: flex;
   flex-direction: column;
 }
 @media only screen and (min-width: 900px) {
-  .l-container {
+  .l-body {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -11,24 +11,27 @@
 }
 
 .l-nav {
+  width: 100%;
+}
+.l-nav--bottom {
   background-color: black;
   position: sticky;
   bottom: 0;
 }
-@media only screen and (min-width: 600px) {
-  .l-nav {
-    display: none;
-  }
-}
-
-.l-horizontal {
+.l-nav-horizontal {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
-  .l-big {
+  .is-hidden {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .l-container {
     width: 70%;
     display: flex;
     flex-direction: column;

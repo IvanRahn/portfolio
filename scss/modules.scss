@@ -43,12 +43,18 @@ $blue: #007dda;
 
   &-block {
     color: $black;
+    &-additional {
+      color: $grey;
+      font-size: 12px;
+
+    }
   }
 }
 
 .m-hero {
   max-width: 640px;
   padding: 8px;
+  margin-top: 64px;
   @media only screen and (min-width: 600px) {
     padding: 16px 16px 44px;
   }
