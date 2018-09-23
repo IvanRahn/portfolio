@@ -37,22 +37,19 @@
             </div>
           </a>
         </article>
-
         <article class="content">
           <a href="https://github.com/IvanRahn/ca-banking_app" class="content-link">
             <div class="content-block">
               <h3><span>Banking App</span></h3>
               <p class="content-block-additional">+ Ruby, Terminal</p>
-
               <p>A ruby terminal app that imitates an ATM and stores user info, balance and transaction history</p>
             </div>
           </a>
         </article>
-
+<!-- TODO: create additional page -->
         <a href="" class="content-link content-link-bracket"><span>[git more]</span></a>
 
       </section>
-
       <!-- projects end -->
       <!-- side projects start -->
       <section class="l-main-constricted">
@@ -72,75 +69,71 @@
             <div class="content-block">
               <h3><span>This Website</span></h3>
               <p class="content-block-additional">+ HTML, SCSS, SMACSS</p>
-
               <p>The website you are looking at. Done according to SMACSS methodoly, with HTML and SCSS.</p>
             </div>
           </a>
         </article>
+        <!-- TODO: additional page -->
         <!-- <a href="" class="c-link-additional">git more</a> -->
-
       </section>
     </main>
-
     <!-- sideprojects end -->
   </div>
   <!-- main end -->
-  <!-- aside start, contains experience and social media links -->
+  <!-- aside start, contains crest, experience and social media links -->
   <!-- experience -->
   <div class="l-aside">
     <aside class="l-aside-constricted">
-      <section class="l-aside-contstricted-content" >
+      <!-- crest start -->
+      <section class="l-aside-contstricted-content"   id="experience" >
         <img class="crest" src="resources/Ivan-crest-export-v6-03.svg" alt="ivan's logo">
       </section>
+      <!-- crest end -->
       <section class="l-aside-constricted-content" >
-        <h2 id="experience"><span class="underline">Experience</span></h2>
+        <h2><span class="underline">Experience</span></h2>
         <article class="content">
           <div class="content-block">
             <h3>Coder Academy</h3>
             <p class="content-block-additional">2018 — 2019</p>
             <p>Full-Stack Dev bootcamp</p>
           </div>
-
         </article>
-
         <article class="content">
           <div class="content-block">
             <h3>PMEC</h3>
             <p class="content-block-additional">2015 — 2018</p>
             <p>Optimizing processes</p>
           </div>
-
         </article>
-
-
-        <a href="resources/Profile.pdf" class="content-link c-link-additional" download="newfilename"><span>[download resume]</span></a>
+        <a href="resources/Profile.pdf" class="content-link c-link-additional" ><span>[download resume]</span></a>
       </section>
       <!-- experience end -->
       <!-- social media start -->
+      <!-- TODO: change icons to svg -->
       <section class="l-nav" id="contact">
         <h2 id="contact"><span class="underline">Find me on the webs</span></h2>
-        <div class="l-nav-horizontal l-nav-left">
-
+        <div class="l-nav-horizontal l-nav-wrap">
           <div class="SM-icons">
             <a href="https://www.linkedin.com/in/ivanran/" class="content-link" target="_blank">
               <i class="fab fa-linkedin-in" alt="linkedin"></i><p class="content-block-additional"><span>Connect</span></p>
             </a>
           </div>
-
           <div class="SM-icons"><a href="https://github.com/IvanRahn" class="content-link"><i class="fab fa-github"></i><p class="content-block-additional"><span>View activity</span></p></a></div>
           <div class="SM-icons"><a href="https://medium.com/@ivanrahn" class="content-link"><i class="fab fa-medium-m"></i><p class="content-block-additional"><span>Read blog</span></p></a></div>
           <div class="SM-icons"><a class="c-sm content-link" data-clipboard-text="ivan.rahn@gmail.com" id="email"><i class="far fa-envelope"></i><p class="content-block-additional"><span id="change-content">Grab my email</span></p></a></div>
 
         </div>
       </section>
-
+      <!-- social media end -->
     </aside>
   </div>
-  <!-- social media end -->
   <!-- aside end -->
-  <div class="l-footer">
+  <!-- TODO: integrate calendar: -->
+  <!-- <div class="l-footer">
     <footer> <h4>meet me at SydJS meetup on 26/09/2018</h4></footer>
-  </div>
+  </div> -->
+  <!-- footer end -->
+  <!-- TODO: highlight sections -->
   <!-- navbar start -->
   <nav class="l-nav l-nav--bottom l-nav-horizontal is-hidden " >
     <ul class="l-nav-horizontal bottom" id="#navbar">
@@ -156,6 +149,7 @@
 
 
   <script>
+  // script to copy email to clipboard and change text
   var clip = new Clipboard('#email');
 
   clip.on('success', function(e) {

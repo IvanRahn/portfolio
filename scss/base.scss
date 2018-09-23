@@ -1,9 +1,10 @@
+
 $black: #333;
 $grey: #a9a9a9;
 $off-white: #eee;
 $blue: #007dda;
 
-
+//base styling
 html, body, main, aside, header, section, article, span, h1, h2, h3, p, nav, ul, li, i {
   margin: 0;
   padding: 0;
@@ -34,17 +35,12 @@ aside {
   padding: 8px;
 }
 
-
-
 section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 8px;
   margin-bottom: 40px;
-//   @media only screen and (max-width: 900px) and (min-width: 600px) {
-// width: 50%;
-// }
 }
 
 h1 {
@@ -56,6 +52,8 @@ h1 {
   padding-bottom: 24px;
   left: -4px;
   position: relative;
+
+
 }
 h2 {
   font-size: 24px;
@@ -87,30 +85,11 @@ ul {
 
 }
 
-// i {
-//   padding: 16px;
-//   @media only screen and (min-width: 900px) {
-//     padding-left: 0;
-//     margin-right: 24px;
-//     margin-top: 8px;
-    // &::after {
-    //   display: block;
-    //   content: attr(alt);
-    //   font-size: 24px;
-    //   font-family: inherit;
-
-      // margin: 0;
-      // padding: 0;
-    // }
-
-//   }
-// }
 i {
   font-size: 32px;
     padding-bottom: 16px;
     color: $grey;
   @media only screen and (min-width: 600px) {
   font-size: 28px;
-
 }
 }

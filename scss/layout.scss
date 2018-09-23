@@ -1,5 +1,5 @@
 
-
+// layout for body, separates into 3 sections: container, aside, footer
 .l-body {
   display: flex;
   flex-direction: column;
@@ -10,46 +10,7 @@
   }
 }
 
-.l-nav {
-  // border: 2px solid blue;
-  width: 100%;
-  &--bottom {
-    position: sticky;
-    bottom: 0;
-  }
-  &-horizontal {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-  &-left {
-    display: flex;
-    flex-wrap: wrap;
-
-    @media only screen and (min-width: 600px) {
-      justify-content: space-between;
-
-}
-  }
-}
-
-.is-hidden {
-  @media only screen and (min-width: 600px) {
-    display: none;
-  }
-}
-// {
-//   background-color: black;
-//   position: sticky;
-//   bottom: 0;
-// @media only screen and (min-width: 600px) {
-//   display: none;
-//   }
-// }
-
-
-
+// layout for header and main
 .l-container {
 
   @media only screen and (min-width: 600px) {
@@ -63,6 +24,7 @@
 width: 100%;
 }
 }
+// layout for main section, contains projects and activities
 .l-main {
   @media only screen and (min-width: 600px) {
     display: flex;
@@ -72,20 +34,13 @@ width: 100%;
     }
   }
 }
+// layout for aside, contains crest, experience and social media
 .l-aside {
-
-  // display: flex;
-  // flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//
-// section {
-// align-self: center;
-//  }
+  // desktop width 35%
   @media only screen and (min-width: 900px) {
     width: 35%;
-
   }
+  // ipad wrap items on tablet and phone and make crest full width
   &-constricted {
     @media only screen and (max-width: 900px) and (min-width: 600px) {
       display: flex;
@@ -100,7 +55,38 @@ width: 100%;
     }
   }
 }
-
-.l-footer {
+// nav layout
+.l-nav {
   width: 100%;
+  //mobile bottom navbar position
+  &--bottom {
+    position: sticky;
+    bottom: 0;
+  }
+  // lays the navbar horizontaly
+  &-horizontal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  // wraps navbar
+  &-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (min-width: 600px) {
+      justify-content: space-between;
+
 }
+  }
+}
+// hides navbar in desktop view
+.is-hidden {
+  @media only screen and (min-width: 600px) {
+    display: none;
+  }
+}
+// TODO: put calendar in the footer
+// .l-footer {
+//   width: 100%;
+// }

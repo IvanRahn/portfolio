@@ -2,11 +2,53 @@ $black: #333;
 $grey: #a9a9a9;
 $off-white: #eee;
 $blue: #007dda;
+// main components of the page
+// blue tag on top of the page
+.stop-borders {
+  background-color: $blue;
+  padding: 16px 16px 8px;
+  font-weight: 700;
+  font-size: 24px;
+  color: $off-white;
+  position: absolute;
 
+  @media only screen and (min-width: 600px) {
+    margin-left: 20px;
+  }
+}
+// hero
+.m-hero {
+  max-width: 640px;
+  padding: 16px;
+  margin-top: 52px;
+  @media only screen and (min-width: 600px) {
+    padding: 16px 16px 40px;
+    margin-top: 96px;
+  }
+  &-standfirst {
+    font-size: 24px;
+    line-height: 150%;
+
+  }
+}
+// crest
+.crest {
+  width: 136px;
+  height: auto;
+  color: $blue;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 900px) {
+    // width: 100%;
+    margin: initial;
+    // border: 2px solid cyan;
+  }
+}
+// content blocks
 .content {
-  // height: 25%;
   padding-bottom: 32px;
   max-width:300px;
+  // links inside blocks
   &-link {
     span {
       background-color: transparent;
@@ -16,7 +58,6 @@ $blue: #007dda;
       position: relative;
       transition: color ease 0.3s;
       z-index: 0;
-
 
       &::before {
         content: '';
@@ -41,6 +82,7 @@ $blue: #007dda;
       i {
         color: $blue;
       }
+
       span {
         text-decoration: none;
         color: $off-white;
@@ -50,7 +92,6 @@ $blue: #007dda;
         }
       }
     }
-
   }
 
   &-block {
@@ -58,52 +99,41 @@ $blue: #007dda;
     &-additional {
       color: $grey;
       font-size: 13px;
-
     }
   }
 }
 
-.m-hero {
-  max-width: 640px;
-  padding: 16px;
-  margin-top: 52px;
-  @media only screen and (min-width: 600px) {
-    padding: 16px 16px 40px;
-    margin-top: 96px;
-  }
-  &-standfirst {
-    font-size: 24px;
-    line-height: 150%;
-
-  }
-}
+// social media icons
 .SM-icons {
-    width: 50%;
-    p {
-      padding: 0;
-      margin-bottom: 32px;
-    }
-    @media only screen and (min-width: 900px) {
-      width: 25%;
+  width: 50%;
+  p {
+    padding: 0;
+    margin-bottom: 32px;
+  }
+  @media only screen and (min-width: 900px) {
+    width: 25%;
+  }
 }
-
-
-}
+// TODO: rework the naming and placing of the class according to SMACSS
 .bottom {
   background-color: #d4d4d4;
   box-shadow: 0 -2px 1px 0 rgba(0,0,0,.19);
-  height: 40px;
+  height: 48px;
   &-active  a{
-         color:#F38A8A;
-         border-bottom:3px solid #F38A8A;
-        }
-a {
-  color: $grey;
-  &:hover, &:focus {
-    color: $off-white;
+    color: #F38A8A;
+    border-bottom:3px solid #F38A8A;
   }
-  &:visited {
+  a {
     color: $grey;
+    &:hover, &:focus {
+      color: $off-white;
+    }
+    &:visited {
+      color: $grey;
+    }
   }
 }
+
+.underline {
+  border-bottom: 2px solid black;
 }
