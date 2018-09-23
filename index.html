@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
 
   <title>Portfolio</title>
 </head>
@@ -29,7 +29,7 @@
         <a href="https://github.com/IvanRahn/Breathe" class="content-link">
           <div class="content-block">
             <h3><span>Breathe App</span></h3>
-            <p class="content-block-additional">+Ruby, Terminal</p>
+            <p class="content-block-additional">+ Ruby, Terminal</p>
             <p>A ruby terminal app that helps users track their smoking habit. Done in collaboration with Natasha Munasinghe</p>
           </div>
         </a>
@@ -39,7 +39,7 @@
         <a href="https://github.com/IvanRahn/ca-banking_app" class="content-link">
           <div class="content-block">
             <h3><span>Banking App</span></h3>
-            <p class="content-block-additional">+Ruby, Terminal</p>
+            <p class="content-block-additional">+ Ruby, Terminal</p>
 
             <p>A ruby terminal app that imitates an ATM and stores user info, balance and transaction history</p>
           </div>
@@ -58,7 +58,7 @@
         <a href="" class="content-link">
           <div class="content-block">
             <h3><span>Codewars</span></h3>
-            <p class="content-block-additional">+Ruby, JS</p>
+            <p class="content-block-additional">+ Ruby, JS</p>
 
             <p>in progress</p>
           </div>
@@ -68,7 +68,7 @@
         <a href="https://github.com/IvanRahn/Breathe" class="content-link">
           <div class="content-block">
             <h3><span>This Website</span></h3>
-            <p class="content-block-additional">+HTML, SCSS, SMACSS</p>
+            <p class="content-block-additional">+ HTML, SCSS, SMACSS</p>
 
             <p>The website you are looking at. Done according to SMACSS methodoly, with HTML and SCSS.</p>
           </div>
@@ -86,28 +86,27 @@
 <!-- experience -->
 <div class="l-aside" id="#aside">
 <aside class="l-aside-constricted">
-  <section class="l-aside-contstricted-content">
-    <img src="resources/profile-image.jpeg" alt="">
+  <section class="m-hero l-aside-contstricted-content">
+    <img class="crest" src="resources/ivan-crest-02.svg" alt="">
   </section>
   <section>
     <h2><span class="underline">Experience</span></h2>
     <article class="content">
-      <a href="" class="content-link">
         <div class="content-block">
           <h3>Coder Academy</h3>
-          <p class="content-block-additional">2018-2019</p>
+          <p class="content-block-additional">2018 — 2019</p>
         <p>Full-Stack Dev bootcamp</p>
         </div>
-      </a>
+
     </article>
 
-      <article class="content"><a href="" class="content-link">
+      <article class="content">
         <div class="content-block">
           <h3>PMEC</h3>
-          <p class="content-block-additional">2015-2018</p>
+          <p class="content-block-additional">2015 - 2018</p>
           <p>Optimizing processes</p>
         </div>
-      </a>
+
     </article>
 
 
@@ -120,9 +119,9 @@
   <ul class="l-nav-horizontal">
     <li><a href="https://linkedin.com"><i class="fab fa-linkedin fa-3x"></i>
 </a></li>
-    <li><a href="https://linkedin.com"><i class="fas fa-envelope fa-3x"></i></a></li>
-    <li><a href="https://linkedin.com">Git</a></li>
-    <li><a href="https://linkedin.com">Medium</a></li>
+    <li><a class="c-sm" data-clipboard-text="ivan.rahn@gmail.com" id="email"><i class="fas fa-envelope fa-3x"></i></a></li>
+    <li><a href="https://linkedin.com"></a><i class="fab fa-github-square fa-3x"></i></li>
+    <li><a href="https://linkedin.com"></a><i class="fab fa-medium fa-3x"></i></li>
   </ul>
 </section>
 
@@ -142,6 +141,14 @@
   </ul>
 </nav>
 <!-- navbar end -->
+
+
+
+
+
+<script>
+var clip = new Clipboard('#email');
+</script>
 </body>
 <!-- body end -->
 </html>

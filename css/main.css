@@ -1,4 +1,4 @@
-html, body, main, aside, header, section, article, h1, h2, h3, p, nav, ul, li {
+html, body, main, aside, header, section, article, span, h1, h2, h3, p, nav, ul, li {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,6 +17,7 @@ body {
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto;
+  line-height: 150%;
 }
 
 main {
@@ -45,18 +46,15 @@ h1 {
 
 h2 {
   font-size: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 h3 {
   font-size: 16px;
-  padding-bottom: 8px;
 }
 
 p {
   font-size: 15px;
-  line-height: 20px;
-  padding-bottom: 8px;
 }
 
 a {
@@ -146,14 +144,14 @@ ul {
 }
 
 .content {
-  padding-bottom: 16px;
+  padding-bottom: 40px;
   max-width: 300px;
 }
 .content-link span {
   background-color: transparent;
   color: #192a36;
   display: inline-block;
-  padding: 0 3px;
+  padding: 0;
   position: relative;
   text-decoration: underline;
   transition: color ease 0.3s;
@@ -181,23 +179,24 @@ ul {
   color: #333;
 }
 .content-block-additional {
-  color: #ccc;
+  color: #a9a9a9;
   font-size: 12px;
 }
 
 .m-hero {
   max-width: 640px;
-  padding: 8px;
-  margin-top: 64px;
+  padding: 16px;
+  margin-top: 52px;
 }
 @media only screen and (min-width: 600px) {
   .m-hero {
     padding: 16px 16px 44px;
+    margin-top: 96px;
   }
 }
 .m-hero-standfirst {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 150%;
 }
 
 /*<a> additional content*/
@@ -214,11 +213,57 @@ ul {
 
 .stop-borders {
   background-color: #007dda;
-  padding: 16px 16px 8px;
+  padding: 16px 20px 8px;
   font-weight: 700;
   font-size: 24px;
   color: #eee;
   position: absolute;
+}
+@media only screen and (min-width: 600px) {
+  .stop-borders {
+    margin-left: 20px;
+  }
+}
+
+.c-sm {
+  display: inline;
+  position: relative;
+  opacity: 1;
+}
+
+.c-sm:hover:after {
+  background: #111;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  top: 20px;
+  color: #eee;
+  content: "copy to clipboard";
+  display: block;
+  left: -80%;
+  padding: 5px 15px;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 98;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.c-sm:hover:before {
+  border: solid;
+  border-color: #111 transparent;
+  border-width: 0 6px 6px 6px;
+  top: 14px;
+  content: "";
+  display: block;
+  left: 40%;
+  position: absolute;
+  z-index: 99;
+}
+
+.crest {
+  width: 136px;
+  height: auto;
+  color: #007dda;
 }
 
 /*# sourceMappingURL=main.css.map */

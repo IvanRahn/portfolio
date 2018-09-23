@@ -1,5 +1,5 @@
 
-html, body, main, aside, header, section, article, h1, h2, h3, p, nav, ul, li {
+html, body, main, aside, header, section, article, span, h1, h2, h3, p, nav, ul, li {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,6 +18,7 @@ body {
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto;
+  line-height: 150%;
 }
 
 main {
@@ -47,19 +48,15 @@ h1 {
 }
 h2 {
   font-size: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 h3 {
   font-size: 16px;
-  padding-bottom: 8px;
-
 }
+
 p {
   font-size: 15px;
-  line-height: 20px;
-  padding-bottom: 8px;
-
 }
 
 a {

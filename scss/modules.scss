@@ -1,18 +1,18 @@
 $black: #333;
-$grey: #ccc;
+$grey: #a9a9a9;
 $off-white: #eee;
 $blue: #007dda;
 
 .content {
   // height: 25%;
-  padding-bottom: 16px;
+  padding-bottom: 40px;
   max-width:300px;
   &-link {
     span {
     background-color: transparent;
     color: #192a36;
     display: inline-block;
-    padding: 0 3px;
+    padding: 0;
     position: relative;
     text-decoration: underline;
     transition: color ease 0.3s;
@@ -53,13 +53,15 @@ $blue: #007dda;
 
 .m-hero {
   max-width: 640px;
-  padding: 8px;
-  margin-top: 64px;
+  padding: 16px;
+  margin-top: 52px;
   @media only screen and (min-width: 600px) {
     padding: 16px 16px 44px;
+    margin-top: 96px;
   }
   &-standfirst {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 150%;
+
   }
 }
