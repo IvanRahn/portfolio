@@ -57,7 +57,10 @@ $blue: #007dda;
     color: $black;
     &-additional {
       color: $grey;
-      font-size: 13px;
+      font-size: 16px;
+      @media only screen and (min-width: 900px) {
+        font-size: 13px;
+      }
 
     }
   }
@@ -72,8 +75,11 @@ $blue: #007dda;
     margin-top: 96px;
   }
   &-standfirst {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 150%;
+    @media only screen and (min-width: 900px) {
+      font-size: 24px;
+    }
 
   }
 }
@@ -92,7 +98,7 @@ $blue: #007dda;
 .bottom {
   background-color: #d4d4d4;
   box-shadow: 0 -2px 1px 0 rgba(0,0,0,.19);
-  height: 40px;
+  height: 48px;
   &-active  a{
          color:#F38A8A;
          border-bottom:3px solid #F38A8A;

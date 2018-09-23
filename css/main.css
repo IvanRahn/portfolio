@@ -38,7 +38,7 @@ section {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 64px;
   font-weight: 700;
   letter-spacing: 1px;
   margin: 0;
@@ -47,18 +47,38 @@ h1 {
   left: -4px;
   position: relative;
 }
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 80px;
+  }
+}
 
 h2 {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 32px;
+}
+@media only screen and (min-width: 900px) {
+  h2 {
+    font-size: 24px;
+  }
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 24px;
+}
+@media only screen and (min-width: 900px) {
+  h3 {
+    font-size: 16px;
+  }
 }
 
 p {
-  font-size: 15px;
+  font-size: 20px;
+}
+@media only screen and (min-width: 900px) {
+  p {
+    font-size: 15px;
+  }
 }
 
 a {
@@ -218,7 +238,12 @@ i {
 }
 .content-block-additional {
   color: #a9a9a9;
-  font-size: 13px;
+  font-size: 16px;
+}
+@media only screen and (min-width: 900px) {
+  .content-block-additional {
+    font-size: 13px;
+  }
 }
 
 .m-hero {
@@ -233,8 +258,13 @@ i {
   }
 }
 .m-hero-standfirst {
-  font-size: 24px;
+  font-size: 32px;
   line-height: 150%;
+}
+@media only screen and (min-width: 900px) {
+  .m-hero-standfirst {
+    font-size: 24px;
+  }
 }
 
 .SM-icons {
@@ -253,7 +283,7 @@ i {
 .bottom {
   background-color: #d4d4d4;
   box-shadow: 0 -2px 1px 0 rgba(0, 0, 0, 0.19);
-  height: 40px;
+  height: 48px;
 }
 .bottom-active a {
   color: #F38A8A;

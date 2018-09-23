@@ -48,7 +48,7 @@ section {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 64px;
   font-weight: 700;
   letter-spacing: 1px;
   margin: 0;
@@ -56,19 +56,35 @@ h1 {
   padding-bottom: 24px;
   left: -4px;
   position: relative;
+
+  @media only screen and (min-width: 900px) {
+    font-size: 80px;
+  }
 }
 h2 {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 32px;
+
+  @media only screen and (min-width: 900px) {
+    font-size: 24px;
+  }
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 24px;
+
+  @media only screen and (min-width: 900px) {
+    font-size: 16px;
+  }
 
 }
 
 p {
-  font-size: 15px;
+  font-size: 20px;
+
+  @media only screen and (min-width: 900px) {
+    font-size: 15px;
+  }
 }
 
 a {

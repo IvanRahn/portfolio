@@ -42,7 +42,12 @@
 }
 .content-block-additional {
   color: #a9a9a9;
-  font-size: 13px;
+  font-size: 16px;
+}
+@media only screen and (min-width: 900px) {
+  .content-block-additional {
+    font-size: 13px;
+  }
 }
 
 .m-hero {
@@ -57,8 +62,13 @@
   }
 }
 .m-hero-standfirst {
-  font-size: 24px;
+  font-size: 32px;
   line-height: 150%;
+}
+@media only screen and (min-width: 900px) {
+  .m-hero-standfirst {
+    font-size: 24px;
+  }
 }
 
 .SM-icons {
@@ -77,7 +87,7 @@
 .bottom {
   background-color: #d4d4d4;
   box-shadow: 0 -2px 1px 0 rgba(0, 0, 0, 0.19);
-  height: 40px;
+  height: 48px;
 }
 .bottom-active a {
   color: #F38A8A;
