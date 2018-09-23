@@ -1,5 +1,6 @@
+@charset "UTF-8";
 .content {
-  padding-bottom: 40px;
+  padding-bottom: 32px;
   max-width: 300px;
 }
 .content-link span {
@@ -8,7 +9,6 @@
   display: inline-block;
   padding: 0;
   position: relative;
-  text-decoration: underline;
   transition: color ease 0.3s;
   z-index: 0;
 }
@@ -23,11 +23,18 @@
   background-color: #007dda;
   transition: all ease 0.3s;
 }
-.content-link:hover span {
+.content-link span::after {
+  content: " »";
+  color: #007dda;
+}
+.content-link:hover i, .content-link:focus i {
+  color: #007dda;
+}
+.content-link:hover span, .content-link:focus span {
   text-decoration: none;
   color: #eee;
 }
-.content-link:hover span::before {
+.content-link:hover span::before, .content-link:focus span::before {
   width: 100%;
 }
 .content-block {
@@ -35,7 +42,7 @@
 }
 .content-block-additional {
   color: #a9a9a9;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .m-hero {
@@ -45,13 +52,26 @@
 }
 @media only screen and (min-width: 600px) {
   .m-hero {
-    padding: 16px 16px 44px;
+    padding: 16px 16px 40px;
     margin-top: 96px;
   }
 }
 .m-hero-standfirst {
   font-size: 24px;
   line-height: 150%;
+}
+
+.SM-icons {
+  width: 50%;
+}
+.SM-icons p {
+  padding: 0;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 600px) {
+  .SM-icons {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=modules.css.map */

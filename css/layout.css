@@ -23,6 +23,15 @@
   justify-content: space-around;
   width: 100%;
 }
+.l-nav-left {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 600px) {
+  .l-nav-left {
+    justify-content: space-between;
+  }
+}
 
 @media only screen and (min-width: 600px) {
   .is-hidden {
@@ -32,7 +41,7 @@
 
 @media only screen and (min-width: 600px) {
   .l-container {
-    width: 70%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,7 +60,7 @@
 
 @media only screen and (min-width: 900px) {
   .l-aside {
-    width: 30%;
+    width: 35%;
   }
 }
 @media only screen and (max-width: 900px) and (min-width: 600px) {
