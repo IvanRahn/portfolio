@@ -4,21 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- link css -->
   <link rel="stylesheet" href="css/main.css">
-  <!-- link google fonts -->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-  <!-- link fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <!-- link clipboard.js for clipboard -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
-  <!-- link jquery -->
   <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-    <meta name="theme-color" content="#a9a9a9"/>
-
   <title>Portfolio</title>
 </head>
 <!-- body start, contains 3 sections: main, aside and footer -->
@@ -36,7 +29,7 @@
       <section class="l-main-constricted" >
         <h2 id="projects"><span class="underline">Projects</span></h2>
         <article class="content">
-          <a href="https://github.com/IvanRahn/Breathe" class="content-link" target="_blank" rel="noreferrer">
+          <a href="https://github.com/IvanRahn/Breathe" class="content-link">
             <div class="content-block">
               <h3><span>Breathe App</span></h3>
               <p class="content-block-additional">+ Ruby, Terminal</p>
@@ -45,7 +38,7 @@
           </a>
         </article>
         <article class="content">
-          <a href="https://github.com/IvanRahn/ca-banking_app" class="content-link" target="_blank" rel="noreferrer">
+          <a href="https://github.com/IvanRahn/ca-banking_app" class="content-link">
             <div class="content-block">
               <h3><span>Banking App</span></h3>
               <p class="content-block-additional">+ Ruby, Terminal</p>
@@ -54,7 +47,7 @@
           </a>
         </article>
 <!-- TODO: create additional page -->
-        <a href="https://github.com/IvanRahn" class="content-link content-link-bracket" target="_blank" rel="noreferrer"><span>[git more]</span></a>
+        <a href="" class="content-link content-link-bracket"><span>[git more]</span></a>
 
       </section>
       <!-- projects end -->
@@ -62,18 +55,17 @@
       <section class="l-main-constricted">
         <h2><span class="underline">Activities</span></h2>
         <article class="content">
-          <a href="https://codewars.com/users/Rahn" class="content-link" target="_blank" rel="noreferrer">
+          <a href="" class="content-link">
             <div class="content-block">
               <h3><span>Codewars</span></h3>
               <p class="content-block-additional">+ Ruby, JS</p>
 
-              <p>Constanly participating in challenges genereated by the wider community to solve coding problems elegantly
-              </p>
+              <p>in progress</p>
             </div>
           </a>
         </article>
         <article class="content">
-          <a href="https://github.com/IvanRahn/Portfolio" class="content-link" target="_blank" rel="noreferrer">
+          <a href="https://github.com/IvanRahn/Breathe" class="content-link">
             <div class="content-block">
               <h3><span>This Website</span></h3>
               <p class="content-block-additional">+ HTML, SCSS, SMACSS</p>
@@ -119,16 +111,16 @@
       <!-- social media start -->
       <!-- TODO: change icons to svg -->
       <section class="l-nav" id="contact">
-        <h2><span class="underline">Find me on the webs</span></h2>
+        <h2 id="contact"><span class="underline">Find me on the webs</span></h2>
         <div class="l-nav-horizontal l-nav-wrap">
           <div class="SM-icons">
-            <a href="https://www.linkedin.com/in/ivanran/" class="content-link" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/ivanran/" class="content-link" target="_blank">
               <i class="fab fa-linkedin-in" alt="linkedin"></i><p class="content-block-additional"><span>Connect</span></p>
             </a>
           </div>
-          <div class="SM-icons"><a href="https://github.com/IvanRahn" class="content-link" target="_blank" rel="noreferrer"><i class="fab fa-github"></i><p class="content-block-additional"><span>View activity</span></p></a></div>
-          <div class="SM-icons"><a href="https://medium.com/@ivanrahn" class="content-link" target="_blank" rel="noreferrer"><i class="fab fa-medium-m"></i><p class="content-block-additional"><span>Read blog</span></p></a></div>
-          <div class="SM-icons"><a class="c-sm content-link" data-clipboard-text="ivan.rahn@gmail.com" id="email" target="_blank" rel="noreferrer"><i class="far fa-envelope"></i><p class="content-block-additional"><span id="change-content">Grab my email</span></p></a></div>
+          <div class="SM-icons"><a href="https://github.com/IvanRahn" class="content-link"><i class="fab fa-github"></i><p class="content-block-additional"><span>View activity</span></p></a></div>
+          <div class="SM-icons"><a href="https://medium.com/@ivanrahn" class="content-link"><i class="fab fa-medium-m"></i><p class="content-block-additional"><span>Read blog</span></p></a></div>
+          <div class="SM-icons"><a class="c-sm content-link" data-clipboard-text="ivan.rahn@gmail.com" id="email"><i class="far fa-envelope"></i><p class="content-block-additional"><span id="change-content">Grab my email</span></p></a></div>
 
         </div>
       </section>
@@ -159,10 +151,14 @@
   <script>
   // script to copy email to clipboard and change text
   var clip = new Clipboard('#email');
+
   clip.on('success', function(e) {
     document.getElementById("change-content").innerHTML="Email copied to clipboard";
+
     setTimeout(function(){document.getElementById("change-content").innerHTML="Grab my email"; }
 , 2000);
+
+
   })
 
 </script>

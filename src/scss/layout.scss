@@ -1,0 +1,92 @@
+
+// layout for body, separates into 3 sections: container, aside, footer
+.l-body {
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: 900px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+// layout for header and main
+.l-container {
+
+  @media only screen and (min-width: 600px) {
+    width: 65%;
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 900px) and (min-width: 600px) {
+width: 100%;
+}
+}
+// layout for main section, contains projects and activities
+.l-main {
+  @media only screen and (min-width: 600px) {
+    display: flex;
+    justify-content: space-around;
+    &-constricted {
+      width: 50%;
+    }
+  }
+}
+// layout for aside, contains crest, experience and social media
+.l-aside {
+  // desktop width 35%
+  @media only screen and (min-width: 900px) {
+    width: 35%;
+  }
+  // ipad wrap items on tablet and phone and make crest full width
+  &-constricted {
+    @media only screen and (max-width: 900px) and (min-width: 600px) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      section {
+        width: 50%;
+      }
+      section:nth-child(1){
+        width: 100%;
+      }
+    }
+  }
+}
+// nav layout
+.l-nav {
+  width: 100%;
+  //mobile bottom navbar position
+  &--bottom {
+    position: sticky;
+    bottom: 0;
+  }
+  // lays the navbar horizontaly
+  &-horizontal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  // wraps navbar
+  &-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (min-width: 600px) {
+      justify-content: space-between;
+
+}
+  }
+}
+// hides navbar in desktop view
+.is-hidden {
+  @media only screen and (min-width: 600px) {
+    display: none;
+  }
+}
+// TODO: put calendar in the footer
+// .l-footer {
+//   width: 100%;
+// }
